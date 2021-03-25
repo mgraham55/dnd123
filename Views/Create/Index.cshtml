@@ -1,0 +1,47 @@
+﻿@model List<dnd123.Models.Character.Character>
+
+
+<p>
+    <a asp-controller="Create" asp-action="Add">Add Character</a>
+</p>
+
+<p>
+    <a asp-controller="Create" asp-action="Delete">Delete Character</a>
+</p>
+
+@if (Model.Count == 0)
+{
+    <p>No Characters yet!</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Bio
+            </th>
+            <th>
+                Race
+            </th>
+            <th>
+                Class
+            </th>
+        </tr>
+        @foreach (var catr in Model)
+        {
+            <tr>
+                <td>@catr.Id</td>
+                <td>@catr.Name</td>
+                <td>@catr.Bio</td>
+                <td>@catr.Race</td>
+                <td>@catr.CharacterClass</td>
+            </tr>
+        }
+    </table>
+}

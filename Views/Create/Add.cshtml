@@ -1,0 +1,25 @@
+﻿@model dnd123.ViewModels.AddCharacterViewModel;
+
+<h1>Add Character</h1>
+
+<form asp-controller="Create" asp-action="Add" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Bio"></label>
+        <input asp-for="Bio" />
+        <span asp-validation-for="Bio"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Race">Race</label>
+        <select asp-for="Race" asp-items="Model.Races"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="CharacterClass">Class</label>
+        <select asp-for="CharacterClass" asp-items="Model.CharacterClasss"></select>
+    </div>
+    <input type="submit" value="Create Character" />
+</form>

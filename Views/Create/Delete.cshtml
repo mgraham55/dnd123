@@ -1,0 +1,18 @@
+﻿    
+
+    <h1>Delete Character</h1>
+
+    <form method="post">
+        @foreach (var catr in ViewBag.characters)
+        {
+            <div class="form-group">
+                <label>
+                    <span>@catr.Name</span>
+                    <input type="checkbox" name="characterIds" value="@catr.Id" class="form-control">
+                </label>
+            </div>
+        }
+
+        <input type="submit" value="Delete Selected Characters" class="btn btn-danger">
+
+    </form>

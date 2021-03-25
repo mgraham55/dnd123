@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+
+namespace dnd123.Models.Character
+{
+    public class Character
+    {
+        public string Name { get; set; }
+
+        public string Bio { get; set; }
+
+        public Race Race { get; set; }
+
+        public CharacterClass CharacterClass { get; set; }
+
+      /*  public Abilities Ability { get; set; }*/
+        
+        public int Id { get; }
+        static private int nextId = 1;
+
+        public Character(string name, string bio)
+        {
+            Name = name;
+            Bio = bio;
+            Id = nextId;
+            nextId++;
+        }
+
+        public Character()
+        {
+            Id = nextId;
+            nextId++;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Character @character &&
+                   Id == @character.Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id);
+        }
+    }
+
+
+}
