@@ -18,21 +18,16 @@ namespace dnd123.Models.Character
 
       /*  public Abilities Ability { get; set; }*/
         
-        public int Id { get; }
-        static private int nextId = 1;
+        public int Id { get; set; }
 
         public Character(string name, string bio)
         {
             Name = name;
             Bio = bio;
-            Id = nextId;
-            nextId++;
         }
 
         public Character()
         {
-            Id = nextId;
-            nextId++;
         }
 
         public override string ToString()

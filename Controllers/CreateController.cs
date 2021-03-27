@@ -11,9 +11,16 @@ namespace dnd123.Controllers
 {
     public class CreateController : Controller
     {
+        private CharacterDbContext context;
+
+        public CreateController(CharacterDbContext dbContext)
+        {
+            context = dbContext;
+        }
+
         public IActionResult Index()
         {
-            List<Character> Characters = new List<Character>(CharacterData.GetAll());
+            List<Character> Characters = context.Characters.ToList();
 
             return View(Characters);
         }
@@ -38,7 +45,8 @@ namespace dnd123.Controllers
                     Race = addCharacterViewModel.Race
                 };
 
-                CharacterData.Add(newCharacter);
+                context.Characters.Add(newCharacter);
+                context.SaveChanges();
 
                 return Redirect("/Create");
             }
@@ -48,7 +56,7 @@ namespace dnd123.Controllers
 
         public IActionResult Delete()
         {
-            ViewBag.characters = CharacterData.GetAll();
+            ViewBag.characters = context.Characters.ToList();
 
             return View();
         }
@@ -58,8 +66,10 @@ namespace dnd123.Controllers
         {
             foreach (int characterId in characterIds)
             {
-                CharacterData.Remove(characterId);
+                Character theCharacter = context.Characters.Find(characterId);
+                context.Characters.Remove(theCharacter);
             }
+            context.SaveChanges();
 
             return Redirect("/Create");
         }
