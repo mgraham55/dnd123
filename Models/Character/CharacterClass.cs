@@ -5,9 +5,15 @@ using System.Threading.Tasks;
 
 namespace dnd123.Models.Character
 {
-    public enum CharacterClass
+    public class CharacterClass
     {
-        Barbarian,
+    public int Id { get; set; }
+
+    public string Name { get; set; }
+
+    public string IconUrl { get; set; }
+
+    /*Barbarian,
         Bard,
         Cleric,
         Druid,
@@ -19,6 +25,6 @@ namespace dnd123.Models.Character
         Sorcerer,
         Warlock,
         Wizard
-
+*/
     }
 }

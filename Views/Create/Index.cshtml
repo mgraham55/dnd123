@@ -1,12 +1,9 @@
 ﻿@model List<dnd123.Models.Character.Character>
 
-
 <p>
-    <a asp-controller="Create" asp-action="Add">Add Character</a>
-</p>
+    <a asp-controller="Create" asp-action="Add"><button class="add_btn"><i class="fas fa-plus-circle"></i></button></a>
 
-<p>
-    <a asp-controller="Create" asp-action="Delete">Delete Character</a>
+    <a asp-controller="Create" asp-action="Delete"><button class="add_btn"><i class="far fa-trash-alt"></i></button></a>
 </p>
 <style>
     .styled-table {
@@ -39,6 +36,18 @@
 
     .styled-table tbody tr:last-of-type {
         border-bottom: 2px solid black;
+    }
+
+    .add_btn {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        cursor: pointer;
+    }
+
+    .add_btn:hover {
+        background-color: gray;
     }
 </style>
 

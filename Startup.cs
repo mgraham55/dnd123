@@ -1,6 +1,7 @@
 using dnd123.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,6 +27,9 @@ namespace dnd123
         {
             services.AddControllersWithViews();
 
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<CharacterDbContext>();
+
             services.AddDbContext<CharacterDbContext>(options =>
                  options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
         }
@@ -42,7 +46,7 @@ namespace dnd123
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();
