@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bxLw/ForIp2uHsOUwykof28dMhBPQcxyq/dhuS3Oo+4t/n3AImXr1MngTm5q8fu2/CQTvrYUaRXBb1Q6IT+jpA==",
+  "dgSpecHash": "bTOdOmyRqNURf4evn/xKvIBQAipjtMQL8rVG/YBbho7veNNOInupOpjLHUxUovu3u6PBLMTJYp4FuKoivIrjMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\stink\\dnd123\\dnd123\\dnd123.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\stink\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.13\\microsoft.aspnetcore.cryptography.internal.3.1.13.nupkg.sha512",
+    "C:\\Users\\stink\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.13\\microsoft.aspnetcore.cryptography.keyderivation.3.1.13.nupkg.sha512",
+    "C:\\Users\\stink\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.13\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -22,6 +25,8 @@
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.13\\microsoft.extensions.configuration.binder.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.13\\microsoft.extensions.dependencyinjection.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.13\\microsoft.extensions.dependencyinjection.abstractions.3.1.13.nupkg.sha512",
+    "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.13\\microsoft.extensions.identity.core.3.1.13.nupkg.sha512",
+    "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.13\\microsoft.extensions.identity.stores.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.logging\\3.1.13\\microsoft.extensions.logging.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.13\\microsoft.extensions.logging.abstractions.3.1.13.nupkg.sha512",
     "C:\\Users\\stink\\.nuget\\packages\\microsoft.extensions.options\\3.1.13\\microsoft.extensions.options.3.1.13.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using dnd123.Models.Character;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace dnd123.Data
 {
-    public class CharacterDbContext : DbContext
+    public class CharacterDbContext : IdentityDbContext
     {
         public DbSet<Character> Characters { get; set; }
 

@@ -39,7 +39,6 @@ C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Create\Index.cs
 C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Edit\Index.cshtml.g.cs
 C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Learn\Index.cshtml.g.cs
 C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Index.cshtml.g.cs
-C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\User Login\Index.cshtml.g.cs
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -85,3 +84,10 @@ C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Create\Delete.c
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\stink\dnd123\dnd123\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\stink\dnd123\dnd123\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
