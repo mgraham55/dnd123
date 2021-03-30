@@ -113,8 +113,8 @@ namespace dnd123.Models.Character
         WallofThorns,
         [Display(Name = "Watery Sphere")]
         WaterySphere,
-        [Display(Name = "Witch Bold")]
-        WitchBold,
+        [Display(Name = "Witch Bolt")]
+        WitchBolt,
         [Display(Name = "Wrathful Smite")]
         WrathfulSmite
     }

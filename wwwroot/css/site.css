@@ -85,3 +85,50 @@ li a:hover {
      background-color: #111;
 }
 
+
+/*create index*/
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+    
+.styled-table th,
+.styled-table td {
+     padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+     border-bottom: 1px solid #dddddd;
+}
+    
+.styled-table tbody tr:nth-of-type(even) {
+     background-color: dimgrey;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+.add_char {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 30px 30px;
+    cursor: pointer;
+
+}
+
+.add_char:hover {
+    background-color: gray;
+}
+

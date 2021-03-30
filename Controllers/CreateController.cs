@@ -42,7 +42,8 @@ namespace dnd123.Controllers
                     Name = addCharacterViewModel.Name,
                     Bio = addCharacterViewModel.Bio,
                     CharacterClass = addCharacterViewModel.CharacterClass,
-                    Race = addCharacterViewModel.Race
+                    Race = addCharacterViewModel.Race,
+                    Abilities = addCharacterViewModel.Abilities
                 };
 
                 context.Characters.Add(newCharacter);
