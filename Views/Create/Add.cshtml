@@ -3,36 +3,55 @@
 
 <h1>Add Character</h1>
 
-<form asp-controller="Create" asp-action="Add" method="post">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" />
-        <span asp-validation-for="Name"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Bio"></label>
-        <input asp-for="Bio" />
-        <span asp-validation-for="Bio"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Race">Race</label>
-        <select asp-for="Race" asp-items="Model.Races"></select>
-    </div>
-    <div class="form-group">
-        <label asp-for="CharacterClass">Class</label>
-        <select asp-for="CharacterClass" asp-items="Model.CharacterClasss"></select>
-    </div class="form-group">
-        <label asp-for="Abilities">Ability 1</label>
-        <select asp-for="Abilities" asp-items="Model.Ability"></select>
-    <div>
-        </div class="form-group">
-        <label asp-for="Abilities">Ability 2</label>
-        <select asp-for="Abilities" asp-items="Model.Ability"></select>
-    <div>
-    </div class="form-group">
-        <label asp-for="Abilities">Ability 3</label>
-        <select asp-for="Abilities" asp-items="Model.Ability"></select>
-    <div>
-        <input type="submit" value="Create Character" />
-    </div>
-</form>
+<table>
+    <form asp-controller="Create" asp-action="Add" method="post">
+        <tr>
+            <td>
+                <label asp-for="Name"></label>
+            </td>
+            <td>
+                <input asp-for="Name" />
+                <span asp-validation-for="Name"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Bio"></label>
+            </td>
+            <td>
+                <input asp-for="Bio" />
+                <span asp-validation-for="Bio"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Race">Race</label>
+            </td>
+            <td>
+                <select asp-for="Race" asp-items="Model.Races"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="CharacterClass">Class</label>
+            </td>
+            <td>
+                <select asp-for="CharacterClass" asp-items="Model.CharacterClasss"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Abilities">Abilities</label>
+            </td>
+            <td>
+                <select multiple size="3" asp-for="Abilities" asp-items="Model.Ability"></select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Create Character" />
+            </td>
+        </tr>
+    </form>
+</table>

@@ -8,17 +8,12 @@ namespace dnd123.Models.Character
 {
     public enum Abilities
     {
-        [Display(Name = "Acid Splash")]
         AcidSplash,
-        [Display(Name = "Arcane Weapon")]
         ArcaneWeapon,
-        [Display(Name = "Astral Projection")]
         AstralProjection,
         Barkskin,
         Bless,
-        [Display(Name = "Burning Hands")]
         BurningHands,
-        [Display(Name = "Call Lightning")]
         CallLightning,
         [Display(Name = "Chaos Bolt")]
         ChaosBolt,

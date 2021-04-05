@@ -33,7 +33,7 @@ namespace dnd123.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(AddCharacterViewModel addCharacterViewModel)
+        public IActionResult Add(AddCharacterViewModel addCharacterViewModel, string[] selectedSkills)
         {
             if (ModelState.IsValid)
             {
@@ -43,8 +43,18 @@ namespace dnd123.Controllers
                     Bio = addCharacterViewModel.Bio,
                     CharacterClass = addCharacterViewModel.CharacterClass,
                     Race = addCharacterViewModel.Race,
-                    Abilities = addCharacterViewModel.Abilities
                 };
+
+                for (int i = 0; i < selectedSkills.Length; i++)
+                {
+                    CharacterAbility ability = new CharacterAbility
+                    {
+                        CharacterId = newCharacter.Id,
+                        Character = newCharacter,
+                        AbilityId = Int32.Parse(selectedSkills[i]),
+                    };
+                    context.CharacterAbility.Add(ability);
+                }
 
                 context.Characters.Add(newCharacter);
                 context.SaveChanges();

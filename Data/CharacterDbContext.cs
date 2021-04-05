@@ -12,9 +12,18 @@ namespace dnd123.Data
     {
         public DbSet<Character> Characters { get; set; }
 
+        public DbSet<CharacterAbility> CharacterAbility { get; set; }
+
         public CharacterDbContext(DbContextOptions<CharacterDbContext> options) : base(options)
         {
 
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CharacterAbility>()
+                .HasKey(j => new { j.CharacterId, j.AbilityId });
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

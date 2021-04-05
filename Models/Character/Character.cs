@@ -16,7 +16,7 @@ namespace dnd123.Models.Character
 
         public CharacterClass CharacterClass { get; set; }
 
-        public Abilities Abilities { get; set; }
+        public List<CharacterAbility> CharacterAbility { get; set; }
         
         public int Id { get; set; }
 

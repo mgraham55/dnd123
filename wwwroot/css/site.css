@@ -118,17 +118,3 @@ li a:hover {
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid black;
 }
-
-.add_char {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 30px 30px;
-    cursor: pointer;
-
-}
-
-.add_char:hover {
-    background-color: gray;
-}
-
